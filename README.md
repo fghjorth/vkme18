@@ -10,7 +10,7 @@ Faget undervises af [Frederik Hjorth](http://fghjorth.github.io), Ph.D., adjunkt
 
 ## Kursusindhold
 
-Seminaret er en del af specialiseringen *Politisk Adfærd og anvendt videregående kvantitative metode*.
+Seminaret er en del af specialiseringen *Politisk Adfærd og anvendt videregående kvantitative metode*. Den mest ajourførte information om faget kan findes på fagets hjemmeside, [github.com/fghjorth/vkme18](https://github.com/fghjorth/vkme18).
 
 Seminaret dækker videregående kvantitative metoder, der anvendes i studiet af politisk adfærd. Det er tilrettelagt til at spille tæt sammen med *Politisk adfærd*, substansfaget i specialiseringen *Politisk Adfærd og anvendt videregående kvantitative metode*. Seminaret vil således inddrage tekster og temaer *Politisk adfærd*. Vi tager fat i centrale studier af politisk adfærd og spørger: hvordan er forfatteren nået frem til sit resultat? Kan vi genskabe resultatet? Og hvor følsomt er det over for andre metodiske valg? Vi lægger også stor vægt på hvordan studerende kan bruge metoderne til selv at besvare politologiske spørgsmål.
 
@@ -44,9 +44,7 @@ Gang | Tema | Litteratur | Case
 
 ## Tid og sted
 
-Tidspunkt og lokale annonceres forud for semesterstart.
-
-<!-- Undervisningen finder sted **onsdage 8-10** i lokale **2.0.24**. Første undervisningsgang er onsdag d. 6. september. -->
+Undervisningen finder sted **torsdage 15-17** i lokale **4.1.36**. Første undervisningsgang er torsdag d. 6. september.
 
 ## Målbeskrivelser
 
