@@ -26,15 +26,15 @@ Gang | Tema | Litteratur | Case
 2  | R workshop I + tidy data | Wickham (2014), Zhang (2017) |
 3  | Data fra online-kilder | MRMN kap 9+14 | Hjorth (2016)
 4  | Tekst som data | Grimmer & Stewart (2013), Benoit & Nulty (2016) | Baturo & Mikhaylov (2013)
-5  | Regression I: OLS brush-up | AP kap 3 | Newman et al. (2015), Solt et al. (2017)
-6  | Regression II: Paneldata | AGS kap 4 | Larsen et al. (2017)
+5  | Regression I: OLS brush-up | AP kap 3 | Mutz (2018)
+6  | Regression II: Paneldata | AGS kap 4 | Mutz (2018)
    | *Efterårsferie* | |
-7  | R workshop II | tba | 
-8  | Introduktion til kausal inferens | Hariri (2012), Samii (2016) | Eckles & Bakshy (2017)
+7  | R workshop II | tba |
+8  | Introduktion til kausal inferens | Angrist & Pischke (2010), Samii (2016) | Carroll (2018)
 9  | Eksperimenter I | AP kap 1+2, GG kap 1+2 | Gerber, Green & Larimer (2008)
 10 | Eksperimenter II | GG kap 3+4+5 | Gerber & Green (2000)
-11 | Instrumentvariable | AP kap 4 | Lundborg et al. (2017)
-12 | Difference-in-differences | AP kap 5 | 
+11 | Instrumentvariable | AP kap 4 | Colantone & Stanig (2018)
+12 | Difference-in-differences | AP kap 5 |
 13 | Regressionsdiskontinuitetsdesigns | AP kap 6 | Eggers & Hainmueller (2009)
 14 | 'Big data' og maskinlæring | Varian (2014), Montgomery & Olivella (2017) | Theocharis et al. (2016)
 
@@ -72,7 +72,7 @@ Der lægges vægt på, at de studerende opnår kompetencer til at forstå, udfø
 
 - [B] GG: Gerber, A. S., & Green, D. P. (2012). *Field experiments: Design, analysis, and interpretation*. WW Norton.
 
-- [B] AP: Angrist, J. D., & Pischke, J. S. (2014). *Mastering 'metrics: The path from cause to effect*. Princeton University Press. 
+- [B] AP: Angrist, J. D., & Pischke, J. S. (2014). *Mastering 'metrics: The path from cause to effect*. Princeton University Press.
 
 <!-- - [B] AP: Angrist, J. D., & Pischke, J. S. (2008). *Mostly harmless econometrics: An empiricist's companion*. Princeton university press. -->
 
@@ -102,9 +102,13 @@ Der lægges vægt på, at de studerende opnår kompetencer til at forstå, udfø
 
 ### Cases
 
-<!-- - Arunachalam, R., & Watson, S. (2016). Height, Income and Voting. *British Journal of Political Science*, 46(03), 1–20. -->
+- Angrist, J. D., & Pischke, J. S. (2010). The credibility revolution in empirical economics: How better research design is taking the con out of econometrics. *Journal of Economic Perspectives*, 24(2), 3-30.
 
 - Baturo, A., & Mikhaylov, S. (2013). Life of Brian revisited: Assessing informational and non-informational leadership tools. *Political Science Research and Methods*, 1(01), 139-157.
+
+- Carroll, Aaron E. (2018). [Workplace Wellness Programs Don’t Work Well. Why Some Studies Show Otherwise](https://www.nytimes.com/2018/08/06/upshot/employer-wellness-programs-randomized-trials.html?rref=collection%2Fbyline%2Faaron-e.-carroll&action=click&contentCollection=undefined&region=stream&module=stream_unit&version=latest&contentPlacement=1&pgtype=collection). *The New York Times*, August 6, 2018. 
+
+- Colantone, I., & Stanig, P. (2018). Global competition and Brexit. *American Political Science Review*, 112(2), 201-218.
 
 <!-- - Berkman, M. B., & Plutzer, E. (2011). Defeating creationism in the courtroom, but not in the classroom. *Science*, 331(6016), 404-405. -->
 
@@ -112,15 +116,11 @@ Der lægges vægt på, at de studerende opnår kompetencer til at forstå, udfø
 
 <!-- Dinesen, P. T., & Sønderskov, K. M. (2012). Trust in a time of increasing diversity: On the relationship between ethnic heterogeneity and social trust in Denmark from 1979 until today. *Scandinavian Political Studies*, 35(4), 273-294. -->
 
-- Eckles, D., & Bakshy, E. (2017). Bias and high-dimensional adjustment in observational studies of peer effects. Retrieved from [arxiv.org/abs/1706.04692](http://arxiv.org/abs/1706.04692)
-
 - Eggers, A. C., & Hainmueller, J. (2009). MPs for sale? Returns to office in postwar British politics. *American Political Science Review*, 103(04), 513-533.
 
 <!-- - Enos, R. D. (2016). What the demolition of public housing teaches us about the impact of racial threat on political behavior. *American Journal of Political Science*, 60(1), 123-142. -->
 
 - Gerber, A. S., & Green, D. P. (2000). The effects of canvassing, telephone calls, and direct mail on voter turnout: A field experiment. American Political Science Review, 94(03), 653-663.
-
-- Gilens, M., & Page, B. I. (2014). Testing theories of American politics: Elites, interest groups, and average citizens. *Perspectives on politics*, 12(03), 564-581.
 
 - Gerber, A. S., Green, D. P., & Larimer, C. W. (2008). Social pressure and voter turnout: Evidence from a large-scale field experiment. *American Political Science Review*, 102(01), 33-48.
 
@@ -128,15 +128,11 @@ Der lægges vægt på, at de studerende opnår kompetencer til at forstå, udfø
 
 - Hjorth, F. (2016). Intergroup Bias in Parliamentary Rule Enforcement. *Political Research Quarterly*, 69(4), 692-702.
 
-- Larsen, M. V., Hjorth, F., Dinesen, P. & Sønderskov, K. M. (2017). When Do Citizens Respond Politically to the Local Economy? Evidence from Registry Data on Local Housing Markets. Working paper.
+<!-- - Lundborg, P., Plug, E., & Rasmussen, A. W. (2017). Can Women Have Children and a Career? IV Evidence from IVF Treatments. *The American Economic Review*. -->
 
-- Lundborg, P., Plug, E., & Rasmussen, A. W. (2017). Can Women Have Children and a Career? IV Evidence from IVF Treatments. *The American Economic Review*.
+- Mutz, D. C. (2018). Status threat, not economic hardship, explains the 2016 presidential vote. *Proceedings of the National Academy of Sciences*, 201718155.
 
 - Nall, C. (2015). The political consequences of spatial policies: How interstate highways facilitated geographic polarization. *The Journal of Politics*, 77(2), 394-406.
-
-- Newman, B. J., Johnston, C. D., & Lown, P. L. (2015). False consciousness or class awareness? Local income inequality, personal economic position, and belief in American meritocracy. *American Journal of Political Science*, 59(2), 326-340.
-
-- Solt, F., Hu, Y., Hudson, K., Song, J., & Yu, D. E. (2017). Economic inequality and class consciousness. *The Journal of Politics*, 79(3).
 
 - Theocharis, Y., Barbera, P., Fazekas, Z., & Popa, S. A. (2016). A Bad Workman Blames His Tweets? The Consequences of Citizens’ Uncivil Twitter Use When Interacting with Party Candidates. *Journal of Communication*, 66, 1007-1031.
 
@@ -195,9 +191,9 @@ Selvbetjeningen på KUnet.
 
 Faget udgør 7,5 ECTS.
 
-Eksamen består af en seminaropgave, som skal afleveres ved semestrets afslutning. Opgaven består af en selvstændig kvantitativ analyse af data. Opgaven kan have en (eller udgøre en kombination) af flg. tre former: 
+Eksamen består af en seminaropgave, som skal afleveres ved semestrets afslutning. Opgaven består af en selvstændig kvantitativ analyse af data. Opgaven kan have en (eller udgøre en kombination) af flg. tre former:
 
-1. En analyse af en original problemstilling, 
+1. En analyse af en original problemstilling,
 1. Et replikationsstudie med afsæt i en eksisterende studie, eller
 1. Et 'forstudie' til et speciale med inddragelse af relevante empiriske data.
 
