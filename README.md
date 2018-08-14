@@ -106,7 +106,7 @@ Der lægges vægt på, at de studerende opnår kompetencer til at forstå, udfø
 
 - Baturo, A., & Mikhaylov, S. (2013). Life of Brian revisited: Assessing informational and non-informational leadership tools. *Political Science Research and Methods*, 1(01), 139-157.
 
-- Carroll, Aaron E. (2018). [Workplace Wellness Programs Don’t Work Well. Why Some Studies Show Otherwise](https://www.nytimes.com/2018/08/06/upshot/employer-wellness-programs-randomized-trials.html?rref=collection%2Fbyline%2Faaron-e.-carroll&action=click&contentCollection=undefined&region=stream&module=stream_unit&version=latest&contentPlacement=1&pgtype=collection). *The New York Times*, August 6, 2018. 
+- Carroll, Aaron E. (2018). [Workplace Wellness Programs Don’t Work Well. Why Some Studies Show Otherwise](https://www.nytimes.com/2018/08/06/upshot/employer-wellness-programs-randomized-trials.html?rref=collection%2Fbyline%2Faaron-e.-carroll&action=click&contentCollection=undefined&region=stream&module=stream_unit&version=latest&contentPlacement=1&pgtype=collection). *The New York Times*, August 6, 2018.
 
 - Colantone, I., & Stanig, P. (2018). Global competition and Brexit. *American Political Science Review*, 112(2), 201-218.
 
@@ -120,7 +120,7 @@ Der lægges vægt på, at de studerende opnår kompetencer til at forstå, udfø
 
 <!-- - Enos, R. D. (2016). What the demolition of public housing teaches us about the impact of racial threat on political behavior. *American Journal of Political Science*, 60(1), 123-142. -->
 
-- Gerber, A. S., & Green, D. P. (2000). The effects of canvassing, telephone calls, and direct mail on voter turnout: A field experiment. American Political Science Review, 94(03), 653-663.
+- Gerber, A. S., & Green, D. P. (2000). The effects of canvassing, telephone calls, and direct mail on voter turnout: A field experiment. *American Political Science Review*, 94(03), 653-663.
 
 - Gerber, A. S., Green, D. P., & Larimer, C. W. (2008). Social pressure and voter turnout: Evidence from a large-scale field experiment. *American Political Science Review*, 102(01), 33-48.
 
@@ -131,8 +131,6 @@ Der lægges vægt på, at de studerende opnår kompetencer til at forstå, udfø
 <!-- - Lundborg, P., Plug, E., & Rasmussen, A. W. (2017). Can Women Have Children and a Career? IV Evidence from IVF Treatments. *The American Economic Review*. -->
 
 - Mutz, D. C. (2018). Status threat, not economic hardship, explains the 2016 presidential vote. *Proceedings of the National Academy of Sciences*, 201718155.
-
-- Nall, C. (2015). The political consequences of spatial policies: How interstate highways facilitated geographic polarization. *The Journal of Politics*, 77(2), 394-406.
 
 - Theocharis, Y., Barbera, P., Fazekas, Z., & Popa, S. A. (2016). A Bad Workman Blames His Tweets? The Consequences of Citizens’ Uncivil Twitter Use When Interacting with Party Candidates. *Journal of Communication*, 66, 1007-1031.
 
@@ -153,6 +151,8 @@ Der lægges vægt på, at de studerende opnår kompetencer til at forstå, udfø
 - Kleinberg, J., Ludwig, J., Mullainathan, S. (2016). [A Guide to Solving Social Problems with Machine Learning](https://hbr.org/2016/12/a-guide-to-solving-social-problems-with-machine-learning). *Harvard Business Review*.
 
 - Ladd, J. M., & Lenz, G. S. (2009). Exploiting a rare communication shift to document the persuasive power of the news media. *American Journal of Political Science*, 53(2), 394-410.
+
+- Nall, C. (2015). The political consequences of spatial policies: How interstate highways facilitated geographic polarization. *The Journal of Politics*, 77(2), 394-406.
 
 - Stegmueller, D. (2013). How many countries for multilevel modeling? A comparison of frequentist and Bayesian approaches. *American Journal of Political Science*, 57(3), 748-761.
 
