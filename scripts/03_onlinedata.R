@@ -1,6 +1,6 @@
 setwd("~/GitHub/vkme18/")
 
-pacman::p_load(tidyverse,rvest,janitor,stringr)
+pacman::p_load(tidyverse,rvest,magrittr,janitor,stringr,textclean,rtweet)
 
 ###
 # DEL 1: SCREEN SCRAPING
@@ -29,8 +29,8 @@ kr_all<-bind_rows(html_table(kr[[1]],fill=T),
 
 #lidt ekstra trylleryl: fødsels/dødsår
 kr_all<-kr_all %>% 
-  mutate(byear=str_extract(født,"\\d{3,}")) %>% #udtrækker tal med 3 eller flere cifre
-  mutate(dyear=ifelse(is.na(død),str_extract(fratrådte_død,"\\d{3,}"),str_extract(død,"\\d{3,}"))) %>% 
+  mutate(byear=str_extract(født,"\\d{3,4}")) %>% #udtrækker tal med 3 eller 4 cifre
+  mutate(dyear=ifelse(is.na(død),str_extract(fratrådte_død,"\\d{3,4}"),str_extract(død,"\\d{3,4}"))) %>% 
   mutate(number=row_number(),
          yrs=as.numeric(dyear)-as.numeric(byear))
 
@@ -38,15 +38,32 @@ kr_all<-kr_all %>%
 ggplot(kr_all,aes(number,yrs)) +
   geom_point()
 
+#eksempel 2: screen scraping af folketingsdebatter
+#testdebateurl<-"http://webarkiv.ft.dk/Samling/19991/MENU/00449865.htm"
+
+fttaleurl <- "http://webarkiv.ft.dk/Samling/19991/salen/R1_BEH1_3_3_263.htm"
+
+#træk text ud af url'et
+fttale <- fttaleurl %>% 
+  read_html() %>% 
+  html_nodes("p") %>%  
+  html_text() 
+
+#lidt extra housekeeping for at få kun den rene tekst
+fttale <- fttale %>% 
+  magrittr::extract(2:5) %>% 
+  paste(.,collapse = " ") %>% 
+  replace_html() %>% 
+  replace_white()
+
+
 ###
 # DEL 2: API'ER
 ###
 
-require(rtweet)
-
 key<-"xxx"
 secret<-"yyy"  
-create_token(app="mpdata",key,secret,cache=F)
+create_token(app="mpdata",key,secret)
 
 #info om udvalgt twitter-bruger: LLR
 llr<-lookup_users("larsloekke")
