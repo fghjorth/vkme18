@@ -10,7 +10,7 @@ library(tidyr)
 library(magrittr)
 library(stringr)
 library(lubridate)
-library(readxl)
+library(rio)
 
 # SPM 1
 trolltweets <- import("https://github.com/fivethirtyeight/russian-troll-tweets/raw/master/IRAhandle_tweets_1.csv")
@@ -38,7 +38,7 @@ trolltweets %>%
 
 # SPM 5
 trolltweets %>% 
-  dplyr::summarize(donald = sum(str_count(content, pattern = "Trump")))
+  dplyr::summarize(donald = sum(str_count(content, pattern = "Trump|trump")))
 
 trolltweets %>% 
   dplyr::summarize(hillary = sum(str_count(content, pattern = "Clinton")))
