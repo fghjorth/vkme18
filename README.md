@@ -46,6 +46,8 @@ Gang | Tema | Litteratur | Case
 
 Undervisningen finder sted **torsdage 15-17** i lokale **4.1.36**. Første undervisningsgang er torsdag d. 6. september.
 
+Undervisningsgang 5, skemalagt til d. 4. oktober, skal flyttes. For at finde en ny tid, svar venligst på [denne Doodle](https://doodle.com/poll/nydv49rp7ps4w4xt).
+
 ## Målbeskrivelser
 
 Seminarets målsætning er at sætte den studerende i stand til efter endt undervisning at kunne (ILO's):
