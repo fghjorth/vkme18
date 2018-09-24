@@ -51,7 +51,7 @@ fttale <- fttaleurl %>%
 
 #lidt extra housekeeping for at få kun den rene tekst
 fttale <- fttale %>% 
-  magrittr::extract(2:5) %>% 
+  .[2:5] %>% 
   paste(.,collapse = " ") %>% 
   replace_html() %>% 
   replace_white()
