@@ -34,8 +34,8 @@ ncorp <- corpus(nytaars)
 # 3: importer ordbog
 afinn <- import("https://raw.githubusercontent.com/fnielsen/afinn/master/afinn/data/AFINN-da-32.txt")
 
-posord <- afinn$V1[afinn$V2>2]
-negord <- afinn$V1[afinn$V2< -2]
+posord <- afinn$V1[afinn$V2 > 0]
+negord <- afinn$V1[afinn$V2 < 0]
 
 dict <- dictionary(list(pos=posord,
                         neg=negord))
