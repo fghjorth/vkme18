@@ -22,7 +22,44 @@ idf<- log10( 4/3 )
 tf*idf
 
 ####
-# BATURO & MIKHAYLOV
+# DICTIONARY 
+####
+
+# 1: importer tekster
+nytaars <- readtext("data/04_royal",encoding="latin1")
+
+# 2: lav korpus
+ncorp <- corpus(nytaars)
+
+# 3: importer ordbog
+afinn <- import("https://raw.githubusercontent.com/fnielsen/afinn/master/afinn/data/AFINN-da-32.txt")
+
+posord <- afinn$V1[afinn$V2>2]
+negord <- afinn$V1[afinn$V2< -2]
+
+dict <- dictionary(list(pos=posord,
+                        neg=negord))
+
+# 4: lav en dfm baseret paa ordbogen
+ndfm <- dfm(ncorp,dictionary = dict) 
+
+# 5: lav om til data frame
+ndf <- quanteda::convert(ndfm,to="data.frame")
+
+# 6: analyser ordbalance over tid
+ndf <- ndf %>% 
+  mutate(year=substr(document,1,4),
+         balance=pos-neg) 
+
+ggplot(ndf,aes(year,balance)) +
+  geom_point()
+
+ndf %>% 
+  arrange(balance) %>% 
+  slice(1:3)
+
+####
+# WORDSCORES: BATURO & MIKHAYLOV 
 ####
 
 # 1: importer tekster
