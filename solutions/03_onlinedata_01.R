@@ -14,7 +14,7 @@ consurl <- "http://www.conservapedia.com/Essay:Greatest_Conservative_Movies"
 liburl <- "http://www.conservapedia.com/Essay:Worst_Liberal_Movies"
 
 # Henter data for konservative film
-cons <- GET(consurl, add_headers('user-agent' = 'University student (fmg720@alumni.ku.dk)')) # Skaffer adgang
+cons <- GET(consurl, add_headers('user-agent' = 'University student (xxx@abc.com)')) # Skaffer adgang
 cons <- read_html(cons)
 cons_tables <- html_nodes(cons, "table")
 cons_dat <- rbind(html_table(cons_tables[[1]], fill = TRUE),
@@ -28,7 +28,7 @@ dim(cons_dat)
 cons_dat$political <- rep(0,nrow(cons_dat)) # Værdien 0 til alle konservative film (skal bruges senere)
 
 # Henter data for liberale film
-libs <- GET(liburl, add_headers('user-agent' = 'University student (fmg720@alumni.ku.dk)')) # Skaffer adgang
+libs <- GET(liburl, add_headers('user-agent' = 'University student (xxx@abc.com)')) # Skaffer adgang
 libs <- read_html(libs)
 libs_tables <- html_nodes(libs, "table")
 libs_dat <- rbind(html_table(libs_tables[[1]], fill = TRUE),
