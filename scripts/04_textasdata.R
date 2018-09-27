@@ -1,6 +1,6 @@
 setwd("~/GitHub/vkme18")
 
-pacman::p_load(tidyverse,readtext,quanteda,stringr)
+pacman::p_load(tidyverse,readtext,quanteda,stringr,rio)
 
 ####
 # TF-IDF
@@ -46,12 +46,16 @@ ndfm <- dfm(ncorp,dictionary = dict)
 # 5: lav om til data frame
 ndf <- quanteda::convert(ndfm,to="data.frame")
 
+corpsummary <- ncorp %>% summary() %>% as_data_frame()
+
 # 6: analyser ordbalance over tid
 ndf <- ndf %>% 
   mutate(year=substr(document,1,4),
-         balance=pos-neg) 
+         balance=pos-neg) %>% 
+  left_join(.,corpsummary,by=c("document"="Text")) %>% #fletter corpus summary ind så vi ved hvor mange ord der er i hver tekst 
+  mutate(balanceperword=balance/Tokens)
 
-ggplot(ndf,aes(year,balance)) +
+ggplot(ndf,aes(year,balanceperword)) +
   geom_point()
 
 ndf %>% 
