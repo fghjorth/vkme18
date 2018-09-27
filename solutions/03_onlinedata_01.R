@@ -89,3 +89,8 @@ movies %>%
 
 # T-test
 t.test(movies$box ~ movies$political) # p = 0.016, diff. er signifikant
+
+# top 5 i hver gruppe
+movies %>% 
+  group_by(political) %>% 
+  top_n(5,box)

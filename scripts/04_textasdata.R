@@ -10,7 +10,9 @@ simpletexts<-c("velfærd velfærd velfærd",
                "velfærd velfærd vækst",
                "velfærd vækst vækst",
                "vækst vækst vækst")
+
 simplecorpus<-corpus(simpletexts,docnames=c("el","s","v","la"))
+
 simpledfm<-dfm(simpletexts)
 
 #tf-idf
