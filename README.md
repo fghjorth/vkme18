@@ -26,7 +26,7 @@ Gang | Tema | Litteratur | Case
 2  | R workshop I + tidy data | Wickham (2014), Zhang (2017) |
 3  | Data fra online-kilder | MRMN kap 9+14 | Hjorth (2016)
 4  | Tekst som data | Grimmer & Stewart (2013), Benoit & Nulty (2016) | Baturo & Mikhaylov (2013)
-5  | Regression I: OLS brush-up | AP kap 3 | Mutz (2018)
+5  | Regression I: OLS brush-up | AP kap 2 | Mutz (2018)
 6  | Regression II: Paneldata | AGS kap 4 | Mutz (2018)
    | *Efterårsferie* | |
 7  | R workshop II | tba |
