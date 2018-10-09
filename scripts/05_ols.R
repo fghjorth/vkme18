@@ -1,15 +1,12 @@
 setwd("~/GitHub/vkme18")
 
-require(tidyverse)
-require(broom)
-require(rio)
-require(stargazer)
+pacman::p_load(tidyverse,broom,rio,stargazer)
 
 #kigger på filerne i mappen med Mutz' replikationsdata
 dir("data/03_mutz")
 
 #indlæser filen med tværsnitsdata
-mutz03<-import("data/03_mutz/Amerispeak2016OctForReplication.dta") %>% 
+mutz05<-import("data/03_mutz/Amerispeak2016OctForReplication.dta") %>% 
   as_tibble() 
 
 #vi skal kode nogle få variable om - i Mutz' do-file ser det således ud:
@@ -21,7 +18,7 @@ mutz03<-import("data/03_mutz/Amerispeak2016OctForReplication.dta") %>%
 #   generate majorindex=(majorsexR+majorrelig+majorrace)/3
 
 #her er tidy-versionen af samme øvelse
-mutz03<-mutz03 %>% 
+mutz05<-mutz05 %>% 
   mutate(cutdifftherm=cut(thermdiffTC,breaks=20,labels=F),
          majorsexR=majorsex*-1,
          majorindex=(majorsexR+majorrelig+majorrace)/3)
@@ -32,12 +29,12 @@ s4m1<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+
 #            prop_civlaborforce_unemp+prop_manuf+ #af anonymitetshensyn er disse variable desværre ikke med
             majorindex+pt4r+sdoindex+prejudice+
             isoindex+china+immigindex+tradeindex+natsupindex+
-            ecoperc+terrorthreat,data=mutz03)
+            ecoperc+terrorthreat,data=mutz05)
 
 summary(s4m1)
 
 #Model 1 fra Tabel S5
-s5m1<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME,data=mutz03)
+s5m1<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME,data=mutz05)
 
 stargazer(s5m1,type="text",digits=2)
 
@@ -46,7 +43,7 @@ stargazer(s5m1,type="text",digits=2)
 # Det behøver ikke være helt samme model som i S5, bare samme grundlæggende resultat.
 # Vis de tre modeller side om side med stargazer()-funktionen nederst.
 
-s5m2<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME,data=mutz03)
-s5m3<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME,data=mutz03)
+s5m2<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME,data=mutz05)
+s5m3<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME,data=mutz05)
 
 stargazer(s5m1,s5m2,s5m3,type="text",digits=2)
