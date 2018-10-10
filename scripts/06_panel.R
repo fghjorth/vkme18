@@ -3,10 +3,10 @@ setwd("~/GitHub/vkme18")
 pacman::p_load(tidyverse,broom,rio,stargazer,multiwayvcov)
 
 #kigger på filerne i mappen med Mutz' replikationsdata
-dir("data/03_mutz")
+dir("data/05_mutz")
 
 #henter filen med paneldata
-mutz06 <- import("data/03_mutz/PanelwithoutZips_F.dta") %>% 
+mutz06 <- import("data/05_mutz/PanelwithoutZips_F.dta") %>% 
   as_tibble()
 
 # mutz' DV er feeling thermometer difference
@@ -20,11 +20,11 @@ mutz06<-mutz06 %>%
          id=factor(MNO))
 
 #enkel cross-sectional model: parti, holdning til Kina og SDO (kun i 2016, dvs. wave 1)
-cm1 <- lm(cutdifftherm~dem+chinaself+sdo,data=filter(mutz06,wave==1))
+cm1 <- lm(cutdifftherm~dem+economy+personeco+sdo,data=filter(mutz06,wave==1))
 stargazer(cm1,type="text")
 
 #panelmodel med respondent fixed effects
-pm1 <- lm(cutdifftherm~dem+chinaself+sdo+id+wave,data=mutz06)
+pm1 <- lm(cutdifftherm~dem+economy+personeco+sdo+id+wave,data=mutz06)
 stargazer(pm1,type="text",omit="id")
 
 #vi kan også se på begge ved siden af hinanden

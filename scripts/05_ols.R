@@ -3,10 +3,10 @@ setwd("~/GitHub/vkme18")
 pacman::p_load(tidyverse,broom,rio,stargazer)
 
 #kigger på filerne i mappen med Mutz' replikationsdata
-dir("data/03_mutz")
+dir("data/05_mutz")
 
 #indlæser filen med tværsnitsdata
-mutz05<-import("data/03_mutz/Amerispeak2016OctForReplication.dta") %>% 
+mutz05<-import("data/05_mutz/Amerispeak2016OctForReplication.dta") %>% 
   as_tibble() 
 
 #vi skal kode nogle få variable om - i Mutz' do-file ser det således ud:
