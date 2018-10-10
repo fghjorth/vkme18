@@ -35,3 +35,14 @@ fodbolddf <- quanteda::convert(fodbolddfm,to="data.frame")
 #Udregn frekvens - Jeppe er ikke nævnt en eneste gang i hele 72 taler 
 frekvens <- colSums(fodbolddf != 0)
 frekvens
+
+# 6: plot frekvenser over tid (FH)
+fodbolddf_tidy <- fodbolddf %>% 
+  mutate(yr=as.numeric(substr(document,1,4))) %>% 
+  select(-document) %>% 
+  gather(Klub,Omtaler,1:14)
+
+ggplot(fodbolddf_tidy,aes(x=yr,y=Omtaler,group=Klub,color=Klub)) +
+  geom_line() +
+  scale_color_viridis_d() +
+  theme_minimal()
