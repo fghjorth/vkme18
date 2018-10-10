@@ -2,7 +2,7 @@
 pacman::p_load(tidyverse,readtext,quanteda,stringr,rio)
 
 #Directory 
-setwd("C:/Users/kzc744/Documents/GitHub/vkme18")
+setwd("~/GitHub/vkme18")
 
 # 1: importer tekster
 nytaars <- readtext("data/04_royal",encoding="latin1")
@@ -11,11 +11,11 @@ nytaars <- readtext("data/04_royal",encoding="latin1")
 ncorp <- corpus(nytaars)
 
 # 3: Ordbog: Skjulte hentydninger til danske fodboldklubber.  
-fodboldordbog <- dictionary(list(VejleBoldklub = c("jeppe virøe", "vejle", "vb"), 
+fodboldordbog <- dictionary(list(VejleBoldklub = c("jeppe vierø", "vejle", "vb"), 
                                  FCMidtjylland = c("fcm", "midtjylland", "herning"),
                                  FCKøbenhavn = c("fck", "hovedstaden", "københavn"), 
                                  AaB = c("danmarks paris","aab", "aalborg"),
-                                 EsbjergfB = c("esbjerg", "efb"),
+                                 EsbjergfB = c("esbjerg", "efb","fisk"),
                                  AGF = c("aarhus", "smilets by", "agf"),
                                  Brøndby = c("brøndby", "vestegnen", "bif"),
                                  ACHorsens = c("horsens", "ach"), 

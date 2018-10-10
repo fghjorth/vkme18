@@ -36,7 +36,7 @@ summary(s4m1)
 #Model 1 fra Tabel S5
 s5m1<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME,data=mutz05)
 
-stargazer(s5m1,type="text",digits=2)
+stargazer(s5m1,type="text",digits=2,style = "apsr")
 
 # ØVELSE: Føj 'økonomi'-variable til model 2 herunder og 'status'-variable til model 3, 
 # og vis som Mutz at statusvariablene kan 'dræbe' koefficienten på uddannelse (noncollegegrad).
