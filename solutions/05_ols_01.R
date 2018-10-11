@@ -22,7 +22,7 @@ s5m1<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME,da
 
 #Øvelse første del: Tilføj variablene: "Looking for work", "Concern about future expenses", "Perceptions of family finances (better)","support safety net", "Area median income", "Area unemployed", "Area manufacturing". OBS: mangler de sidste to variable. 
 s5m2<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME+lookwork+ecoworry+ecoperc+safetynet+medianincome,data=mutz05)
-s5m3<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME+lookwork+ecoworry+ecoperc+safetynet+medianincome+majorindex+pt4r,data=mutz05)
+s5m3<-lm(cutdifftherm~party3+noncollegegrad+white+GENDER+AGE7+religion+INCOME+majorindex+pt4r+sdoindex+prejudice+isoindex+china+immigindex+tradeindex,data=mutz05)
 
 stargazer(s5m1,s5m2,s5m3,type="text",digits=2, style = "apsr")
 
