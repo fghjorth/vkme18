@@ -6,7 +6,7 @@ pacman::p_load(tidyverse,broom,rio,stargazer,plm,lmtest)
 widedf <- data_frame(unit=letters[1:3],yt1=c(1,3,6),yt2=c(2,6,7))
 
 tidydf <- widedf %>% 
-  gather(time,value,2:3)
+  gather(tidspkt,pct,2:3)
 
 #kigger på filerne i mappen med Mutz' replikationsdata
 dir("data/05_mutz")
