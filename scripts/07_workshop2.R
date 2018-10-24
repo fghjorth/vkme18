@@ -1,6 +1,44 @@
 setwd("~/GitHub/vkme18")
 
-pacman::p_load(tidyverse,haven,labelled,stargazer,ggeffects)
+pacman::p_load(tidyverse,haven,labelled,stargazer,ggeffects,readxl,janitor)
+
+## TIDYING AF REGNEARK
+
+roster_raw <- read_excel("data/07_dirty_data.xlsx") # available at http://github.com/sfirke/janitor
+glimpse(roster_raw)
+
+roster <- roster_raw %>%
+  clean_names() %>%
+  remove_empty(c("rows", "cols")) %>%
+  mutate(hire_date = excel_numeric_to_date(hire_date),
+         cert = coalesce(certification, certification_1)) %>% # from dplyr
+  select(-certification, -certification_1) # drop unwanted columns
+
+## OMKODNING 
+
+iris
+
+iris <- iris %>% 
+  mutate(laengdedummy=ifelse(Petal.Length>4,1,0),
+         type=case_when(Species=="setosa" ~ "a",
+                        Species=="versicolor" ~ "b",
+                        TRUE ~ NA_character_))
+
+## VISUALISERING
+
+p1 <- ggplot(data = iris, aes(x = Petal.Length, y = Petal.Width))
+p1
+
+p2 <- p1 + geom_point(aes(color = Species))
+p2
+
+p3 <- p2 + geom_smooth(method='lm')
+p3
+
+p4 <- p3 + xlab("Petal Length (cm)") + ylab("Petal Width (cm)") + ggtitle("Petal Length versus Petal Width")
+p4
+
+## ØVELSE
 
 essgen <- read_dta("data/07_ESS8GB.dta")
 esscs <- read_dta("data/07_ESS8GB_cs.dta")
