@@ -4,10 +4,11 @@
 
 ### Opgaver
 
-1. indlæs den britiske udgave af ESS bølge 8 (07_ESS8GB.dta) og det landespecifikke survey (07\_ESS8GB\_cs.dta)
-1. merge de to datasæt med variablen idno
+1. indlæs den britiske udgave af ESS bølge 8 (`07_ESS8GB.dta`) og det landespecifikke survey (`07\_ESS8GB\_cs.dta`)
+1. merge de to datasæt med variablen `idno`
 1. estimér en model der forklarer variablen leavevote vha. div. uafhængige variable
-1. visualiser sammenhængen mellem forskellige typer variable og leavevote m. ggplot()
+1. beregn den forudsagte sammenhæng mellem udvalgte variable og `leavevote` vha. `ggeffects::ggpredict()`
+1. visualiser sammenhængen m. `ggplot()`
 
 ### Hints
 
