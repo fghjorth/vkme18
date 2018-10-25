@@ -48,13 +48,35 @@ plot3 <- ggplot(augmented_s5m3, aes(x = majorindex, y = cutdifftherm, color = wh
 plot3 + geom_line(aes(y = .fitted))
 
 #alternativ (FH): predictions med ggeffects::ggpredict()
-preds_income <- ggpredict(s5m2,"INCOME") %>% mutate(var="Income")
+preds_income <- ggpredict(s5m2,"INCOME") 
+
+%>% mutate(var="Income")
 preds_majindx <- ggpredict(s5m3,"majorindex") %>% mutate(var="Majorindex")
 
 preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
+preds <- bind_rows(preds_income,preds_majindx)
 
-ggplot(preds,aes(x=x,y=predicted,ymin=conf.low,ymax=conf.high)) +
+ggplot(preds_income,aes(x=x,y=predicted,ymin=conf.low,ymax=conf.high)) +
   geom_line() +
   geom_ribbon(alpha=.2) +
-  facet_grid(.~var) +
   theme_bw()
+
+skrive et eller andet
+skrive et eller andet
+skrive et eller andet
+skrive et eller andet
+skrive et eller andet
+

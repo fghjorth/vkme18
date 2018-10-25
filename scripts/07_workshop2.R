@@ -19,7 +19,7 @@ roster <- roster_raw %>%
 iris
 
 iris <- iris %>% 
-  mutate(laengdedummy=ifelse(Petal.Length>4,1,0),
+  mutate(laengdedummy=ifelse(Petal.Length>4, 1, 0),
          type=case_when(Species=="setosa" ~ "a",
                         Species=="versicolor" ~ "b",
                         TRUE ~ NA_character_))
