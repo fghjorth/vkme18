@@ -54,29 +54,10 @@ preds_income <- ggpredict(s5m2,"INCOME")
 preds_majindx <- ggpredict(s5m3,"majorindex") %>% mutate(var="Majorindex")
 
 preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
-preds <- bind_rows(preds_income,preds_majindx)
+
 
 ggplot(preds_income,aes(x=x,y=predicted,ymin=conf.low,ymax=conf.high)) +
   geom_line() +
   geom_ribbon(alpha=.2) +
   theme_bw()
-
-skrive et eller andet
-skrive et eller andet
-skrive et eller andet
-skrive et eller andet
-skrive et eller andet
 
