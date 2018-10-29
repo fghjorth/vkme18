@@ -31,11 +31,11 @@ Gang | Tema | Litteratur | Case
    | *Efterårsferie* | |
 7  | R workshop II | tba |
 8  | Introduktion til kausal inferens | Angrist & Pischke (2010), Samii (2016) | Carroll (2018)
-9  | Eksperimenter I | AP kap 1+2, GG kap 1+2 | Gerber, Green & Larimer (2008)
+9  | Eksperimenter I | AP kap 1, GG kap 1+2 | Gerber, Green & Larimer (2008)
 10 | Eksperimenter II | GG kap 3+4+5 | Gerber & Green (2000)
-11 | Instrumentvariable | AP kap 4 | Colantone & Stanig (2018)
+11 | Instrumentvariable | AP kap 3 | Colantone & Stanig (2018)
 12 | Difference-in-differences | AP kap 5 |
-13 | Regressionsdiskontinuitetsdesigns | AP kap 6 | Eggers & Hainmueller (2009)
+13 | Regressionsdiskontinuitetsdesigns | AP kap 4 | Eggers & Hainmueller (2009)
 14 | 'Big data' og maskinlæring | Varian (2014), Montgomery & Olivella (2017) | Theocharis et al. (2016)
 
 <!-- 4  | Regression III: Multileveldata, interaktioner | GH kap 12 | Berkman & Plutzer (2011) -->
