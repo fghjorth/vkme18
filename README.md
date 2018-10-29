@@ -29,7 +29,7 @@ Gang | Tema | Litteratur | Case
 5  | Regression I: OLS brush-up | AP kap 2 | Mutz (2018)
 6  | Regression II: Paneldata | AGS kap 4 | Mutz (2018)
    | *Efterårsferie* | |
-7  | R workshop II | tba |
+7  | R workshop II | |
 8  | Introduktion til kausal inferens | Angrist & Pischke (2010), Samii (2016) | Carroll (2018)
 9  | Eksperimenter I | AP kap 1, GG kap 1+2 | Gerber, Green & Larimer (2008)
 10 | Eksperimenter II | GG kap 3+4+5 | Gerber & Green (2000)
@@ -46,7 +46,7 @@ Gang | Tema | Litteratur | Case
 
 Undervisningen finder sted **torsdage 15-17** i lokale **4.1.36**. Første undervisningsgang er torsdag d. 6. september.
 
-Undervisningsgang 5, skemalagt til d. 4. oktober, skal flyttes. For at finde en ny tid, svar venligst på [denne Doodle](https://doodle.com/poll/nydv49rp7ps4w4xt).
+<!-- Undervisningsgang 5, skemalagt til d. 4. oktober, skal flyttes. For at finde en ny tid, svar venligst på [denne Doodle](https://doodle.com/poll/nydv49rp7ps4w4xt). -->
 
 ## Målbeskrivelser
 
