@@ -130,7 +130,7 @@ Der lægges vægt på, at de studerende opnår kompetencer til at forstå, udfø
 
 - Hjorth, F. (2016). Intergroup Bias in Parliamentary Rule Enforcement. *Political Research Quarterly*, 69(4), 692-702.
 
-- Hjorth, F. (2018). [Establishment Responses to Populist Challenges: Evidence from Parliamentary Speech.](http://fghjorth.github.io/papers/responses.pdf). Working paper.
+- Hjorth, F. (2018). [Establishment Responses to Populist Challenges: Evidence from Parliamentary Speech](http://fghjorth.github.io/papers/responses.pdf). Working paper.
 
 <!-- - Lundborg, P., Plug, E., & Rasmussen, A. W. (2017). Can Women Have Children and a Career? IV Evidence from IVF Treatments. *The American Economic Review*. -->
 
