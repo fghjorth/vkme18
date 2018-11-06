@@ -36,7 +36,7 @@ Gang | Tema | Litteratur | Case
 11 | Instrumentvariable | AP kap 3 | Colantone & Stanig (2018)
 12 | Difference-in-differences | AP kap 5 |
 13 | Regressionsdiskontinuitetsdesigns | AP kap 4 | Eggers & Hainmueller (2009)
-14 | 'Big data' og maskinlæring | Varian (2014), Montgomery & Olivella (2017) | Theocharis et al. (2016)
+14 | 'Big data' og maskinlæring | Varian (2014), Montgomery & Olivella (2017) | Hjorth (2018)
 
 <!-- 4  | Regression III: Multileveldata, interaktioner | GH kap 12 | Berkman & Plutzer (2011) -->
 <!-- 6  | Matching | Justesen & Klemmensen (2014) | Nall (2015) -->
@@ -130,11 +130,13 @@ Der lægges vægt på, at de studerende opnår kompetencer til at forstå, udfø
 
 - Hjorth, F. (2016). Intergroup Bias in Parliamentary Rule Enforcement. *Political Research Quarterly*, 69(4), 692-702.
 
+- Hjorth, F. (2018). [Establishment Responses to Populist Challenges: Evidence from Parliamentary Speech.](http://fghjorth.github.io/papers/responses.pdf). Working paper.
+
 <!-- - Lundborg, P., Plug, E., & Rasmussen, A. W. (2017). Can Women Have Children and a Career? IV Evidence from IVF Treatments. *The American Economic Review*. -->
 
 - Mutz, D. C. (2018). Status threat, not economic hardship, explains the 2016 presidential vote. *Proceedings of the National Academy of Sciences*, 201718155.
 
-- Theocharis, Y., Barbera, P., Fazekas, Z., & Popa, S. A. (2016). A Bad Workman Blames His Tweets? The Consequences of Citizens’ Uncivil Twitter Use When Interacting with Party Candidates. *Journal of Communication*, 66, 1007-1031.
+<!-- - Theocharis, Y., Barbera, P., Fazekas, Z., & Popa, S. A. (2016). A Bad Workman Blames His Tweets? The Consequences of Citizens’ Uncivil Twitter Use When Interacting with Party Candidates. *Journal of Communication*, 66, 1007-1031. -->
 
 ### Supplerende læsning
 
