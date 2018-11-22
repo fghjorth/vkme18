@@ -32,11 +32,11 @@ panel_long1 <- panel_wide %>%
 panel_long2 <- panel_wide %>% 
   select(id,contains("holdning2")) %>% 
   gather(tid,holdning2,contains("holdning2")) %>% 
-  select(-tid)
+  mutate(tid=str_sub(tid,-2)) 
 
-#når så man har gjort det for alle de tidsvarierende variable kan man flette det hele sammen
+#når så man har gjort det for alle de tidsvarierende variable kan man flette det hele sammen med id og tid
 
 panel_long <- panel_long1 %>% 
-  left_join(.,panel_long2,by="id")
+  left_join(.,panel_long2,by=c("id","tid"))
 
-#hvis der havde været flere havde sekvensen bare fortsat med %>% left_join(.,panel_long3,by="id") osv osv
+#hvis der havde været flere havde sekvensen bare fortsat med %>% left_join(.,panel_long3,by=c("id","tid")) osv osv
