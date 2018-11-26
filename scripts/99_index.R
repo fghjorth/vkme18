@@ -19,6 +19,10 @@ simdat %>%
 #konstruer refleksivt indeks
 simdat %>% 
   select(h1:h5) %>% 
-  rowMeans(.,na.rm = T) -> simdat$index
+  rowMeans(.,na.rm = T) -> simdat$index1
 
+#en alternativ fremgangsmåde der er ren tidyverse:
+simdat %>% 
+  rowwise() %>% 
+  mutate(index2=mean(c(h1,h2,h3,h4,h5),na.rm = T)) 
   
